@@ -3,7 +3,7 @@ variable AWS_REGION {
 }
 
 variable AMIS {
-  type = map
+  type = "map"
   default = {
     us-east-2  = "ami-07efac79022b86107"
     us-east-1  = "ami-06397100adf427136"
@@ -43,7 +43,7 @@ variable dbpass {
   default = "admin123"
 }
 
-variable dbname {
+variable db_name {
   default = "accounts"
 }
 
